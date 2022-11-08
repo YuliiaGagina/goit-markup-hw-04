@@ -16,6 +16,7 @@ html{
     --footer-background: #2F303A;
     --footer-links-color: rgba(255, 255, 255, 0.6);
     --main-butter-hover: #188CE8;
+    --icon-color:#afb1bb;
 
 }
 body{
@@ -30,6 +31,7 @@ body{
 p {
     margin-top: 0;
     margin-bottom: 0;
+    padding: 0;
 }
 img{
     display:block;
@@ -118,6 +120,9 @@ img{
 .header-contact .link{
     display: inline-block;
     padding: 32px 0;
+    
+   
+   
 }
 .header-contact .item + .item{
     margin-left: 50px;
@@ -127,28 +132,41 @@ img{
     margin-left: auto;
     display: flex;
 }
+
 .header .link{
     color: inherit;
     font-weight: 500;
 }
-
-
-
 
 .header .link:hover,
 .header .link:focus{
     color:var(--main-color-hover);
 }
 
-
+/* -------------header-icon----------- */
+.header-contact-icon{
+    fill: currentColor;
+    display: inline-block;
+    margin-right: 10px;
+}
+.header-contact-icon:hover{
+    fill: var(--main-color-hover);
+   
+}
+/* ------------------------------------- */
 /* Hero */
 
 .hero{
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+    max-width: 1600px;
 
     background-color: var(--footer-background);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/Img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .hero .tittle{
     width: 696px;
@@ -222,6 +240,18 @@ img{
 }
 
 
+.benefits .icon-wrapper{
+    background-color: var(--team-background) ;
+    padding: 25px 100px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+.benefits-icon{
+    width: 70px;
+    height: 70px;
+}
+
+
 .benefits .tittle{
     margin-top: 0;
     margin-bottom: 0;
@@ -288,6 +318,7 @@ img{
 }
 
 
+
 .team-list{
     text-align: center;
     display: flex;
@@ -318,7 +349,8 @@ img{
     height: auto;
 }
 .team-list .content{
-    padding: 30px 32px;
+    padding: 30px 32px 0px 32px;
+    margin-bottom: 16px;
 }
 .team .subtittle{
     margin-top: 0;
@@ -336,6 +368,94 @@ img{
     font-size: 16px;
     line-height: 1.18;
 }
+/* ---------team-icon------------- */
+.team .icon-list{
+    display: flex;
+    padding: 0 32px 30px 32px;
+   
+}
+.icon-list .item-icon + .item-icon{
+    margin-left: 10px;
+}
+.icon-list .item-icon{
+    width: 44px;
+    height: 44px;
+    border-radius:50%;
+}
+.team-icon{
+    width: 20px;
+    height: 20px;
+}
+.icon-list .link{
+    display: inline-block;
+    padding: 12px 12px;
+    border-radius:50%;
+    fill: var(--icon-color);
+}
+.icon-list .link:hover{
+    background-color:var(--main-color-hover);
+    fill: var(--white-color);
+}
+/* ------------clients----------- */
+.clients.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.section {
+}
+.container {
+}
+
+.clients-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.clients-list .item {
+    width: calc((100%-150px)/6);
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.clients-list .item:nth-child(6n){
+    margin-right: 0px;
+}
+.clients-list .item:nth-last-child(-n +6){
+    margin-bottom: 0px;
+}
+.icon-wrapper .link {
+    display: inline-block;
+     padding: 22px 24px 21px 26px;
+}
+
+.clients-icon.icon-first {
+    width: 41px;
+    height: 47px;
+}
+.clients-icon.icon-second{
+    width: 40px;
+    height: 52px;
+}
+.clients-icon.icon-third{
+    width: 44px;
+    height: 41px;
+
+}
+.clients-icon.icon-fourth{
+    width: 84px;
+    height: 41px;
+
+}
+.clients-icon.icon-fifth{
+    width: 63px;
+    height: 46px;
+
+}
+.clients-icon.icon-sixth{
+    width: 94px;
+    height: 44px;
+
+}
+
 
 /* footer */
 
