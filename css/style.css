@@ -149,7 +149,8 @@ img{
     display: inline-block;
     margin-right: 10px;
 }
-.header-contact-icon:hover{
+.header-contact-icon:hover,
+.header-contact-icon:focus{
     fill: var(--main-color-hover);
    
 }
@@ -239,18 +240,15 @@ img{
    
 }
 
-
+/* -------benefitn-icon-------- */
 .benefits .icon-wrapper{
     background-color: var(--team-background) ;
     padding: 25px 100px;
     border-radius: 4px;
     margin-bottom: 30px;
 }
-.benefits-icon{
-    width: 70px;
-    height: 70px;
-}
 
+/* -------------------------------------- */
 
 .benefits .tittle{
     margin-top: 0;
@@ -258,7 +256,7 @@ img{
 }
 .benefits .list{
     display: flex;
-    flex-wrap: wra;
+    flex-wrap: wrap;
 
 }
 .benefits-list .item{
@@ -330,6 +328,7 @@ img{
     width: calc((100% - 90px) / 4);
     margin-right: 30px;
     margin-bottom: 30px;
+
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     
@@ -392,7 +391,8 @@ img{
     border-radius:50%;
     fill: var(--icon-color);
 }
-.icon-list .link:hover{
+.icon-list .link:hover,
+.icon-list .link:focus{
     background-color:var(--main-color-hover);
     fill: var(--white-color);
 }
@@ -423,6 +423,7 @@ img{
 .clients-list .item:nth-last-child(-n +6){
     margin-bottom: 0px;
 }
+/* --------clients-icon------------------ */
 .icon-wrapper .link {
     display: inline-block;
      padding: 16px 32px;
@@ -432,11 +433,8 @@ img{
     background-color: var(--main-color-hover);
     fill: var(--white-color);
 }
-.clients-icon{
-    width: 106px;
-    height: 60px;
-}
 
+/* ------------------------------------------ */
 
 /* footer */
 
@@ -509,11 +507,7 @@ img{
 .footer .list-icons {
     display: flex;
 }
-.footer-icon {
-    width: 20px;
-    height: 20px;
-    
-}
+
 .list-icons .item{
     width: 44px;
     height: 44px;
@@ -536,13 +530,11 @@ img{
 
 
 }
-.list-icons .link:hover{
+.list-icons .link:hover,
+.list-icons .link:focus{
     background-color: var(--main-color-hover);
 
 }
-
-
-
 
 /* portfolio */
 
@@ -586,6 +578,10 @@ img{
 }
 .collection .button:hover,
 .collection .button:focus{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.collection .button:hover,
+.collection .button:focus{
     color: var(--white-color);
     background-color: var(--main-color-hover);
 }
@@ -611,10 +607,11 @@ img{
 .cards .item:nth-last-child(-n +3){
     margin-bottom: 0;
 }
-.cards .link:hover{
+.cards .item:hover{
 box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
 box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+
 }
 .cards .card{
     display:block;
