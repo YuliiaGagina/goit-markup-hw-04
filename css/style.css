@@ -401,23 +401,20 @@ img{
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.section {
+.clients-tittle{
+    margin-bottom: 50px;
 }
-.container {
-}
-
 .clients-list {
     display: flex;
+    flex-wrap: wrap;
  
 }
 
 .clients-list .item {
-    width: calc(((100%-150px)/6));
+    width: calc(((100% - 150px) / 6));
     margin-right: 30px;
     margin-bottom: 30px;
     border: 1px solid #AFB1B8;
-    
-    
     
 }
 .clients-list .item:nth-child(6n){
@@ -432,41 +429,13 @@ img{
      fill: #AFB1B8;
 }
 .icon-wrapper .link:hover{
-    fill: var(--main-color-hover);
+    background-color: var(--main-color-hover);
+    fill: var(--white-color);
 }
 .clients-icon{
     width: 106px;
     height: 60px;
 }
-
-/* .clients-icon.icon-first {
-    width: 41px;
-    height: 47px;
-}
-.clients-icon.icon-second{
-    width: 40px;
-    height: 52px;
-}
-.clients-icon.icon-third{
-    width: 44px;
-    height: 41px;
-
-}
-.clients-icon.icon-fourth{
-    width: 84px;
-    height: 41px;
-
-}
-.clients-icon.icon-fifth{
-    width: 63px;
-    height: 46px;
-
-}
-.clients-icon.icon-sixth{
-    width: 94px;
-    height: 44px;
-
-} */
 
 
 /* footer */
@@ -475,6 +444,22 @@ img{
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--footer-background);
+}
+.footer-content{
+    display: flex;
+    gap: 70px;
+}
+.footer-right{
+    padding-top: 12px;
+}
+.footer-sutittle{
+    
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    color: var(--white-color);
+    font-size: 14px;
+    text-transform: uppercase;
 }
 
 .logo.lower{
@@ -519,6 +504,44 @@ img{
 .link.tel:focus{
     color: var(--main-color-hover);
 }
+
+/* --------footer-icons------------------- */
+.footer .list-icons {
+    display: flex;
+}
+.footer-icon {
+    width: 20px;
+    height: 20px;
+    
+}
+.list-icons .item{
+    width: 44px;
+    height: 44px;
+    border-radius:50%;
+}
+.list-icons .item + .item{
+    margin-left: 10px;
+     
+}
+
+
+.list-icons .link{
+    display: inline-block;
+    padding: 12px 12px;
+    width: 44px;
+    height: 44px;
+    border-radius:50%;
+    fill: var(--white-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+
+}
+.list-icons .link:hover{
+    background-color: var(--main-color-hover);
+
+}
+
+
 
 
 /* portfolio */
@@ -587,6 +610,11 @@ img{
 }
 .cards .item:nth-last-child(-n +3){
     margin-bottom: 0;
+}
+.cards .link:hover{
+box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
+box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 .cards .card{
     display:block;
